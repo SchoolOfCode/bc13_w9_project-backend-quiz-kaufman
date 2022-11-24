@@ -31,8 +31,9 @@ describe('testing question input box', () => {
 describe('testing question input box', () => {
   it('Gets,types and asserts', () => {
     cy.visit('http://localhost:3000')
+    cy.get('select#topic.dropdown').select(1)
     //cy.get('textarea[name="Topic"').should('be.empty')
-    cy.get('select[name="topic"]').select(1)
+   // cy.get('select[name="topic"]').select(1)
     //cy.get('button').click()
     
   })
